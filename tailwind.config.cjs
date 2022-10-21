@@ -3,6 +3,7 @@ module.exports = {
   content: [
     "./*.html",
     "./src/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/tw-elements/dist/js/**/*.js"
   ],
   theme: {
 
@@ -16,9 +17,14 @@ module.exports = {
       "text-color": "#393E46",
       "grid-color": "#393E46",
       "test-color": "#F8F8F8",
-      "back": "#F7F7F7",
+      "back": "#CAF0F8",
+      
+      
+      /* F7F7F7*/
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require("tw-elements/dist/plugin")
+  ],
 }

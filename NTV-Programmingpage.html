@@ -7,7 +7,132 @@
     <title>NTV</title>
 </head>
 <body>
-    <div class="text-5xl text-header-color">Forritun</div>
-    <a href="index.html"><button type="submit" class="text-text-color bg-header-color hover:bg-hover-color font-normal rounded-xl text-xl mt-7 px-3 py-3 hover:ease-in-out duration-500">Skoða Nánar <link rel="" href="index.html"></button></a>
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon (1).ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title>NTV.is</title>
+  </head>
+  <body class="bg-header-color">
+    <div class=":container absolute bg-blue-300 bg-cover h-[650px] w-screen pt-5 bg-center " style="background-image: url(public/forritunbg.jpg)">
+    <nav class="bg-header-color mx-5 p-2 md:flex md:items-center md:justify-between">
+      <div class="flex justify-between items-center ">
+        <span class="text-2xl cursor-pointer">
+          <img class="h-20 w-40"
+            src="public/ntv-logo2.png">
+        </span>
+        <span class="text-3xl cursor-pointer mr-5 mt-2 md:hidden block text-text-color">
+          <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+        </span>
+      </div>
+      
+     
+      <ul class="md:flex fixed justify-center md:items-center md:z-auto md:static bg-header-color w-full md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+        <li class="mx-4 my-6 md:my-0">
+          <a href="index.html" class="text-xl font-semibold text-text-color hover:text-hover-color duration-500">  NÁMSFRAMBOÐ </a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="#" class="text-xl font-semibold text-text-color hover:text-hover-color duration-500">SKRÁNING</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="#" class="text-xl font-semibold text-text-color hover:text-hover-color duration-500">SJÁLFSNÁM/FRELSI</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="#" class="text-xl font-semibold text-text-color hover:text-hover-color duration-500">UM NTV</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0 ">
+          <a href="#" class="text-xl font-semibold text-text-color hover:text-hover-color duration-500">MÍNAR SÍÐUR</a>
+        </li>
+        <li class="ml-5 flex gap-4">
+            <a href=""><img class="w-10 h-10" src="public/facebook.png" alt=""></a>
+            <a href=""><img class="w-10 h-10" src="public/insta.png" alt=""></a>
+            <a href=""><img class="w-10 h-10" src="public/twitter.png" alt=""></a>
+            <a href=""><img class="w-10 h-10" src="public/linked.png" alt=""></a>
+          </li>
+      </ul>
+    </nav>
+    
+    <div class="text-header-color text-4xl md:text-5xl md:ml-20 lg:ml-20 mx-5 mt-[200px] justify-end items-start">
+      <h1 class="text-6xl mt-20">Forritun</h1>
+      <p class="text-sm lg:text-lg max-w-xl mb-20">Þetta er yfirgripsmikið forritunarnám sem spannar þrjár heilar annir þar sem kenndir eru allir helstu <br> færniþætti sem forritarar þurfa kunna til að starfa við hugbúnaðarsmíði. <br> Námsefnið og verkefnin er unnin í samstarfi við íslensk hugbúnaðarhús og kennararnir <br> starfa allir í fullri vinnu við forritun hjá stórum framsæknum fyrirtækjum. <br> Námið er því sérlega miðað að allri þróun og áherslum markaðarins á hverjum tíma.</p>
+
+      <!-- linka button á NTV.is/forritun -->
+    </div>
+
+
+    <div class="grid grid-cols-1 gap-5 mx-10 mt-36">
+      <div class="bg-header-color rounded-xl shadow-2xl w-full h-full p-8 mt-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-1 xl:grid-rows-1 gap-5 shadow-logo-color">
+        <div class="h-52 lg:h-72 text-xl w-auto bg bg-cover bg-center rounded-xl text-center text-header-color transform transition duration-500 hover:scale-105 shadow-xl shadow-hover-color bg-hover-color" style="background-image: url(public/nodejs.jpg)" >GRUNNUR Í FORRITUN</div>
+        <p class="text-text-color text-lg">Í dag er mikill skortur á forriturum enda mikil gróska í faginu. Margir sýna því áhuga að læra forritun en sumir vita ekki hvað starfið felur í sér. Tilgangur þessa námskeiðs er að bjóða nemendum upp á að kynnast grunnatriðum forritunar með möguleika á því að halda áfram námi. Hefst 14. september.</p>
+        <a class="h-52 lg:h-72 text-xl w-auto bg bg-cover bg-center rounded-xl text-center text-header-color transform transition duration-500 hover:scale-105 shadow-xl shadow-hover-color bg-hover-color" style="background-image: url(public/code.jpg)" href="NTV-DetailsPage.html" >FORRITUNARBRAUT - DIPLOMANÁM</a>
+        <p class="text-text-color text-lg">Þetta er yfirgripsmikið Diplómanám í forritun sem spannar þrjár heilar annir þar sem kenndir eru allir helstu færniþætti sem forritarar þurfa kunna til að starfa við hugbúnaðarsmíði. Námið miðast aðallega að framendaforritun, með góðan skilning á bakenda.  Námið miðast alfarið við þarfir markaðarins á hverum tíma með það að leiðarljósi að frammúrskarandi nemendur fái góð tækifæri á íslenskum atvinnumarkaði. Hefst 14. september.</p>
+        <div class="h-52 lg:h-72 text-xl w-auto bg bg-cover bg-center rounded-xl text-center text-header-color transform transition duration-500 hover:scale-105 shadow-xl shadow-hover-color bg-hover-color" style="background-image: url(public/nodejs.jpg)">FORRITUN 1.ÖNN</div>
+        <p class="text-text-color text-lg">Á fyrstu önn í forritun læra nemendur grundvallaratriði í forritun og fræðast um smíði snjallsímaforrita með Flutter sem er nýtt forritunarumhverfi frá Google. Auk þess fá nemendur þjálfun í viðmótshönnun og notendaupplifun. Önninni lýkur með lokaverkefni. Hefst 14. september.</p>
+        <div class="h-52 lg:h-72 text-xl w-auto bg bg-cover bg-center rounded-xl text-center text-header-color transform transition duration-500 hover:scale-105 shadow-xl shadow-hover-color bg-hover-color" style="background-image: url(public/code.jpg)">FORRITUN 2.ÖNN</div>
+        <p class="text-text-color text-lg">Á annarri önn læra nemendur að hanna skýjalausnir. Nemendur læra að forrita kerfi sem eru með viðmót í vafra og eru þ.a.l. ekki bundin við ákveðin stýrikerfi og henta m.a. fyrir snjalltæki.</p>
+        <div class="h-52 lg:h-72 text-xl w-auto bg bg-cover bg-center rounded-xl text-center text-header-color transform transition duration-500 hover:scale-105 shadow-xl shadow-hover-color bg-hover-color" style="background-image: url(public/nodejs.jpg)">FORRITUN 3.ÖNN</div>
+        <p class="text-text-color text-lg">Þriðja önn í forritun er framhald af annarri önn þar sem meiri áhersla er lögð á bakendaforritun, gagnvirk samskipti við vefþjónustu ásamt tengingu og skipulag í gagnaumhverfinu. Þar vinna nemendur að gerð vefja og/eða snjallsímaforrita með gagnagrunni í skýjaumverfi. Þriðja önnin í forritun er alltaf kennd á haustönn, en að auki á vorönn ef næg þátttaka er.</p>
+        <table class="">
+          
+        </table>
+      </div>
+      <div class="bg-header-color rounded-2xl shadow-xl w-full h-screen p-8 mt-10 col-start-1 lg:col-start-2 shadow-logo-color">
+        <div class="sm:max-w-lg items-center justify-center">
+          <h1 class="flex justify-center text-4xl text-text-color">FRÉTTIR</h1>
+          <h1 class="text-2xl text-center text-text-color" >4 qualities you need to succeed in a cybersecurity career.</h1>
+          <p class="text-text-color">Cybersecurity requires people who see the ‘big picture’. <br> To get ahead in the sector, you should work on the soft skills to complement your tech skills.</p>
+          <div class="h-24 bg-cover bg-center" style="background-image: url(public/cyber.jpg)"></div>
+          <div class=" border-b-2 mt-5 mb-14"></div>
+          <h1 class="text-2xl text-center text-text-color" >The security flaw that Python developers should be aware of</h1>
+          <p class="text-text-color">Security firm Checkmarx found that one in three software packages from PyPI contains a flaw <br> that can lead to malicious code being automatically installed.</p>
+          <div class="h-24 bg-cover bg-center" style="background-image: url(public/python.jpeg)"></div>
+        </div>
+      </div>
+  </div>
+
+
+
+
+     <!-- gera grid eða eh þannig -->
+      
+    </div>
+
+<!-- 
+  2.finna nyjan bg lit sem er semi hvitur
+  4.gera footer
+  5.gera hinar siðurnar
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+      function Menu(e){
+      let list = document.querySelector('ul');
+      e.name === 'menu' ? (e.name = "close",list.classList.add('top-[140px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+      }
+    </script>
+
+  </body>
+</html>
+
+
+
+
+    <!-- <div class="text-5xl text-header-color">Forritun</div>
+    <a href="index.html"><button type="submit" class="text-text-color bg-header-color hover:bg-hover-color font-normal rounded-xl text-xl mt-7 px-3 py-3 hover:ease-in-out duration-500">Skoða Nánar <link rel="" href="index.html"></button></a> -->
 </body>
 </html>

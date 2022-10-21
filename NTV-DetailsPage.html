@@ -1,11 +1,313 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    asfasdfasdfasdfsad
-</body>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['Inter', 'sans-serif'],
+        },
+      }
+    }
+  }
+</script>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon (1).ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title>NTV.is</title>
+  </head>
+  <body class="bg-header-color">
+    <div class=":container absolute bg-blue-300 bg-cover h-[650px] w-screen pt-5 bg-center " style="background-image: url(public/forritunbg.jpg)">
+    <nav class="bg-header-color mx-5 p-2 md:flex md:items-center md:justify-between">
+      <div class="flex justify-between items-center ">
+        <span class="text-2xl cursor-pointer">
+          <img class="h-20 w-40"
+            src="public/ntv-logo2.png">
+        </span>
+        <span class="text-3xl cursor-pointer mr-5 mt-2 md:hidden block text-text-color">
+          <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+        </span>
+      </div>
+      
+     
+      <ul class="md:flex fixed justify-center md:items-center md:z-auto md:static bg-header-color w-full md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+        <li class="mx-4 my-6 md:my-0">
+          <a href="index.html" class="text-xl font-semibold text-text-color hover:text-hover-color duration-500">NÁMSFRAMBOÐ</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="#" class="text-xl font-semibold text-text-color hover:text-hover-color duration-500">SKRÁNING</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="#" class="text-xl font-semibold text-text-color hover:text-hover-color duration-500">SJÁLFSNÁM/FRELSI</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="#" class="text-xl font-semibold text-text-color hover:text-hover-color duration-500">UM NTV</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0 ">
+          <a href="#" class="text-xl font-semibold text-text-color hover:text-hover-color duration-500">MÍNAR SÍÐUR</a>
+        </li>
+        <li class="ml-5 flex gap-4">
+          <a href=""><img class="w-10 h-10" src="public/facebook.png" alt=""></a>
+          <a href=""><img class="w-10 h-10" src="public/insta.png" alt=""></a>
+          <a href=""><img class="w-10 h-10" src="public/twitter.png" alt=""></a>
+          <a href=""><img class="w-10 h-10" src="public/linked.png" alt=""></a>
+        </li>
+      </ul>
+    </nav>
+    
+    <div class="text-header-color text-4xl md:text-5xl md:ml-20 lg:ml-20 mx-5 mt-[200px] justify-end items-start">
+      <h1 class="text-4xl">FORRITUNARBRAUT - DIPLOMANÁM</h1>
+      <!-- linka button á NTV.is/forritun -->
+    </div>
+
+
+    <div class="grid grid-cols-1 gap-5 mx-5 place-content-center mt-80">
+      <div class="bg-hover-color rounded-xl shadow-2xl w-full h-full p-8 mt-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 gap-5 text-lg shadow-logo-color">
+        <div>
+          <div class="">
+            <h1 class=" text-4xl mx-10 text-center my-7">UM NÁMIÐ</h1>
+          </div>
+            <div class="accordion visible w-full h-full" id="accordionExample">
+              <div class="accordion-item bg-white border bg-hover-color">
+                <h2 class="accordion-header mb-0" id="headingOne">
+                  <button class="
+                    accordion-button
+                    relative
+                    flex
+                    items-center
+                    w-full
+                    py-4
+                    px-5
+                    text-base text-gray-800 text-left
+                    bg-white
+                    border-0
+                    rounded-none
+                    transition
+                    focus:outline-none
+                  " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                    aria-controls="collapseOne">
+                    Almennt um námið
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body py-4 px-5">
+                    <p class="text-start ">Þetta er yfirgripsmikið forritunarnám sem spannar þrjár heilar annir þar sem kenndir eru allir helstu færniþætti sem forritarar þurfa kunna til að starfa við hugbúnaðarsmíði. Námsefnið og verkefnin er unnin í samstarfi við íslensk hugbúnaðarhús og kennararnir starfa allir í fullri vinnu við forritun hjá stórum framsæknum fyrirtækjum. Námið er því sérlega miðað að allri þróun og áherslum markaðarins á hverjum tíma. Á fyrstu önn læra nemendur grundvallaratriði í forritun og fræðast um smíði snjallsímaforrita með Flutter sem er ný tækni frá Google. Auk þess fá nemendur þjálfun í viðmótshönnun og notendaupplifun. Fyrstu önninni lýkur svo með lokaverkefni. Á annarri önn læra nemendur að hanna skýjalausnir og bæta við þekkingu fyrri annar. Nemendur læra að forrita kerfi sem eru með viðmót í vafra og eru þ.a.l. ekki bundin við ákveðin stýrikerfi og henta m.a. fyrir snjalltæki. Þetta er vinsælasta leiðin fyrir nýjar hugbúnaðarlausnir. Önninni lýkur svo með lokaverkefni þar sem nemendur hnýta saman þekkingu sína af fyrstu tveimur önnunum. Eftir aðra önn eiga nemendur að vera hæfir til að smíða sinn eigin hugbúnaði í AZURE skýjaumhverfinu. Á þriðju og síðustu önninni er farið meira í bakenda forritun. Nemendur læra uppsetningu gagnvirks vefjar á vefþjón. Farið er í varðveislu gagna, notkun gagnasniðs (e. data format) og þáttun (e. parsing) þeirra í vef. Nemendur vinna að gerð vefja og/eða snjallsímaforrita með gagnagrunni. Þriðja önnin er framhald af 1. og 2. önn á henni er lögð áhersla á föll/aðferðir og hlutbundna forritun. Unnið er með utanaðkomandi gögn svo sem textaskrár og gagnagrunna. Forritun með frávikum (e. exceptions) búin til og notuð. Einnig er unnið með marga klasa í sama verkefni. Þriðju önninni lýkur með stóru raunhæfu lokaverkefni.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item bg-white border border-gray-200">
+                <h2 class="accordion-header mb-0" id="headingTwo">
+                  <button class="
+                    accordion-button
+                    collapsed
+                    relative
+                    flex
+                    items-center
+                    w-full
+                    py-4
+                    px-5
+                    text-base text-gray-800 text-left
+                    bg-white
+                    border-0
+                    rounded-none
+                    transition
+                    focus:outline-none
+                  " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                    aria-controls="collapseTwo">
+                    Fyrir hverja
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body py-4 px-5">
+                    <p class="text-start ">Forritunarbrautin er fyrir alla sem hafa áhuga á að starfa við forritun. Skilyrði er að nemandi hafi almennt gott tölvulæsi. Nemendur verða að vera færir um lesa námsefni á ensku, sem er almennt tungumál hugbúnaðargeirans.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item bg-white border border-gray-200">
+                <h2 class="accordion-header mb-0" id="headingThree">
+                  <button class="
+                    accordion-button
+                    collapsed
+                    relative
+                    flex
+                    items-center
+                    w-full
+                    py-4
+                    px-5
+                    text-base text-gray-800 text-left
+                    bg-white
+                    border-0
+                    rounded-none
+                    transition
+                    focus:outline-none
+                  " type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                    aria-controls="collapseThree">
+                    Markmið
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body py-4 px-5">
+                    <p class="text-start ">Nemandi sem leggur sig fram í náminu á að geta staðið sig vel í starfi sem forritari hjá hugbúnaðarhúsi.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item bg-white border border-gray-200">
+                <h2 class="accordion-header mb-0" id="headingFour">
+                  <button class="
+                    accordion-button
+                    relative
+                    flex
+                    items-center
+                    w-full
+                    py-4
+                    px-5
+                    text-base text-gray-800 text-left
+                    bg-white
+                    border-0
+                    rounded-none
+                    transition
+                    focus:outline-none
+                  " type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                    aria-controls="collapseFour">
+                    Námsyfirferð og kennsluaðferðir
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body py-4 px-5">
+                    <p class="text-start "> Námið samanstendur af fyrirlestrum og verklegum æfingum í skólanum ásamt verkefnavinnu utan kennslutíma. Mikilvægt er að nemendur leggi sig fram í verkefnavinnu utan skólatíma og séu mjög duglegir að leita allra leiða í að þróa færni sína. Góður forritari er alla ævi að leita og læra nýja hluti.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item bg-white border border-gray-200">
+                <h2 class="accordion-header mb-0" id="headingFive">
+                  <button class="
+                    accordion-button
+                    relative
+                    flex
+                    items-center
+                    w-full
+                    py-4
+                    px-5
+                    text-base text-gray-800 text-left
+                    bg-white
+                    border-0
+                    rounded-none
+                    transition
+                    focus:outline-none
+                  " type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                    aria-controls="collapseFive">
+                    Umsjón með náminu
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body py-4 px-5">
+                    <p class="text-start ">Hjá skólanum kenna sérfræðingar sem á sama tíma eru að starfa á fullu í framsæknum íslenskum fyrirtækjum og er því öll þekking, kennsla og verkefni í miklum tengslum við það sem er að gerast í atvinnulífinu á hverjum tíma.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item bg-white border border-gray-200">
+                <h2 class="accordion-header mb-0" id="headingSix">
+                  <button class="
+                    accordion-button
+                    relative
+                    flex
+                    items-center
+                    w-full
+                    py-4
+                    px-5
+                    text-base text-gray-800 text-left
+                    bg-white
+                    border-0
+                    rounded-none
+                    transition
+                    focus:outline-none
+                  " type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
+                    aria-controls="collapseSix">
+                    Greiðslumöguleikar
+                  </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body py-5 px-5">
+                    <p>Ganga þarf frá greiðslu áður en námskeið hefst.
+                      Við bjóðum upp á eftirfarandi greiðslumöguleika:
+                      <ol class="list-decimal p-5">
+                        <li>
+                        Innlegg í heimabanka NTV: 0545 – 26 – 44. Kt: 681096-2729
+                      </li>
+                        Fá kröfu í heimabanka einstaklings eða fyrirtækis til að greiða þar. Sendið beiðni á hrund@ntv.is
+                      <li>
+                        VISA eða MasterCard lán (raðgreiðslur) til allt að 36 mánaða
+                      </li>
+                        Netgíró https://www.netgiro.is/. Hámarksfjárhæð er 1.000.000 kr. til allt að 24 mánaða
+                      <li>
+                        Pei.is http://pei.is/ Hámarksfjárhæð er 2.000.000 kr. til allt að 48 mánaða
+                      </li>
+                      </p></ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+      </div>
+      <div class="bg-header-color rounded-2xl shadow-xl w-full h-full p-8 mt-10 col-start-1 md:col-start-2 shadow-logo-color">
+        <div class="sm:max-w-sm items-center justify-center">
+          <h1 class="flex justify-center text-4xl">FRÉTTIR</h1>
+          <h1 class="text-2xl text-center" >4 qualities you need to succeed in a cybersecurity career.</h1>
+          <p>Cybersecurity requires people who see the ‘big picture’. <br> To get ahead in the sector, you should work on the soft skills to complement your tech skills.</p>
+          <div class="h-24 bg-cover bg-center" style="background-image: url(public/cyber.jpg)"></div>
+          <div class=" border-b-2 mt-20 mb-14"></div>
+          <h1 class="text-2xl text-center" >The security flaw that Python developers should be aware of</h1>
+          <p>Security firm Checkmarx found that one in three software packages from PyPI contains a flaw <br> that can lead to malicious code being automatically installed.</p>
+          <div class="h-24 bg-cover bg-center" style="background-image: url(public/python.jpeg)"></div>
+        </div>
+      </div>
+  </div>
+
+
+
+
+     <!-- gera grid eða eh þannig -->
+      
+    </div>
+
+<!-- 
+  2.finna nyjan bg lit sem er semi hvitur
+  4.gera footer
+  5.gera hinar siðurnar
+
+-->
+
+
+
+
+
+
+
+
+
+
+    
+    <script>
+      function Menu(e){
+      let list = document.querySelector('ul');
+      e.name === 'menu' ? (e.name = "close",list.classList.add('top-[140px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+  </body>
 </html>

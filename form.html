@@ -1,11 +1,7 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon (1).ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -16,7 +12,6 @@
     <title>NTV.is</title>
   </head>
   <body class="bg-header-color font-Roboto">
-    <div class=":container absolute bg-blue-300 bg-cover h-[650px] w-screen pt-5 bg-center " style="background-image: url(public/newback.jpg)">
     <nav class="bg-header-color mx-5 p-2 md:flex md:items-center md:justify-between">
       <div class="flex justify-between items-center ">
         <span class="text-2xl cursor-pointer">
@@ -31,7 +26,7 @@
      
       <ul class="md:flex fixed justify-center md:items-center md:z-auto md:static bg-header-color w-full md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
         <li class="mx-4 my-6 md:my-0">
-          <a href="" class="text-xl font-semibold text-text-color hover:text-hover-color duration-500">NÁMSFRAMBOÐ</a>
+          <a href="index.html" class="text-xl font-semibold text-text-color hover:text-hover-color duration-500">  NÁMSFRAMBOÐ </a>
         </li>
         <li class="mx-4 my-6 md:my-0">
           <a href="#" class="text-xl font-semibold text-text-color hover:text-hover-color duration-500">SKRÁNING</a>
@@ -46,42 +41,105 @@
           <a href="#" class="text-xl font-semibold text-text-color hover:text-hover-color duration-500">MÍNAR SÍÐUR</a>
         </li>
         <li class="ml-5 flex gap-4">
-          <a href=""><img class="w-10 h-10" src="public/facebook.png" alt=""></a>
-          <a href=""><img class="w-10 h-10" src="public/insta.png" alt=""></a>
-          <a href=""><img class="w-10 h-10" src="public/twitter.png" alt=""></a>
-          <a href=""><img class="w-10 h-10" src="public/linked.png" alt=""></a>
-        </li>
+            <a href=""><img class="w-10 h-10" src="public/facebook.png" alt=""></a>
+            <a href=""><img class="w-10 h-10" src="public/insta.png" alt=""></a>
+            <a href=""><img class="w-10 h-10" src="public/twitter.png" alt=""></a>
+            <a href=""><img class="w-10 h-10" src="public/linked.png" alt=""></a>
+          </li>
       </ul>
     </nav>
     
-    <div class="text-header-color text-4xl md:text-5xl md:ml-20 lg:ml-20 mx-5 mt-[200px] justify-end items-start">
-      <h1 class="">Vilt þú læra að verða forritari?</h1>
-      <a href="NTV-Programmingpage.html"><button type="submit" class="text-text-color bg-header-color hover:bg-hover-color font-normal rounded-xl text-xl md:text-3xl mt-5 px-3 py-3 hover:ease-in-out duration-500">Skoða Nánar <link rel="" href="NTV-Programmingpage.html"></button></a>
-      <!-- linka button á NTV.is/forritun -->
-    </div>
+    <div class="grid grid-cols-1 gap-5 mb-20 mx-10">
+      <div class="bg-header-color rounded-xl border border-hover-color shadow-2xl w-full h-full p-8 mt-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-1 xl:grid-rows-1 gap-5 shadow-logo-color">
+        <form action="">
+            <div>
+            <label for="email" class="block mb-2 text-sm font-bold">Email Address <span class="text-hover-color">*</span></label>
+            <input type="email" class="border rounded border-logo-color focus:ring-hover-color focus:border-hover-color block w-full p-2" placeholder="Email Address">
+            </div>
+            <div class="mb-4 flex mt-4">
+                <div class="mr-4 w-full">
+                    <label class="block mb-2 text-sm font-bold">Fornafn <span class="text-hover-color">*</span></label>
+                    <input class="w-full px-3 py-2 border rounded border-logo-color focus:ring-hover-color " placeholder="Fornafn"/>
+                </div>
+                <div class="w-full">
+                    <label class="block mb-2 text-sm font-bold" >Eftirnafn <span class="text-hover-color">*</span></label>
+                    <input class="w-full px-3 py-2 border rounded border-logo-color focus:ring-hover-color focus:border-hover-color" placeholder="Eftirnafn"/>
+                </div>
+            </div>
+            <div>
+                <label class="block mb-2 text-sm font-bold">Kennitala nemanda <span class="text-hover-color">*</span></label>
+                <input class="w-full px-3 py-2 border rounded border-logo-color focus:ring-hover-color focus:border-hover-color" placeholder="Kennitala"/>
+            </div>
+            <div class="mt-4 w-full">
+                <label class="block mb-2 text-sm font-bold">Heimilisfang <span class="text-hover-color">*</span></label>
+                <input class="w-full px-3 py-2 border rounded border-logo-color focus:ring-hover-color focus:border-hover-color" placeholder="Heimilisfang"/>
+            </div>
+            <div class="flex mt-4">
+            <div class="mr-7 w-full">
+                <label class="block mb-2 text-sm font-bold">Land</label>
+                <select class="w-full px-3 py-2.5 border rounded border-logo-color focus:ring-hover-color" placeholder="Land" id="Land">
+                    <option value="">Ísland</option>
+                    <option value="">USA</option>
+                    <option value="">UK</option>
+                    <option value="">Germany</option>
+                    <option value="">France</option>
+                    <option value="">Denmark</option>
+                    <option value="">Sweden</option>
+                </select>
+            </div>
+            <div class="mr-4 w-full">
+                <label class="block mb-2 text-sm font-bold">Bæjarfélag </label>
+                <input class="w-full px-3 py-2 border rounded border-logo-color focus:ring-hover-color " placeholder="Bæjarfélag"/>
+            </div>
+            <div class="ml-5 w-full">
+                <label class="block mb-2 text-sm font-bold">Póstnúmer </label>
+                <input class="w-full px-3 py-2 border rounded border-logo-color focus:ring-hover-color " placeholder="Póstnúmer"/>
+            </div>
+            </div>
+            <div class="mr-4 mt-4 w-full">
+                <label class="block mb-2 text-sm font-bold">Símanúmer</label>
+                <input class="w-full px-3 py-2 border rounded border-logo-color focus:ring-hover-color " placeholder="Símanúmer"/>
+            </div>
+            <div class="mr-7 mt-4 w-full">
+                <label class="block mb-2 text-sm font-bold">Hvar heyrðir þú af náminu? <span class="text-hover-color">*</span></label>
+                <select class="w-full px-3 py-2.5 border rounded border-logo-color focus:ring-hover-color" placeholder="Hvar heyrðir þú af náminu?" id="">
+                    <option value="">Á vef NTV</option>
+                    <option value="">Á samfélagsmiðlum</option>
+                    <option value="">Í Rafrænu fréttabréfi</option>
+                    <option value="">Í Fréttablaðinu</option>
+                    <option value="">Eftir ábendingu frá öðrum</option>
+                    <option value="">Annars staðar</option>
+                </select>
+            </div>
+            <div class="mr-7 mt-4 w-full">
+                <label class="block mb-2 text-sm font-bold"> Nám <span class="text-hover-color">*</span></label>
+                <select class="w-full px-3 py-2.5 border rounded border-logo-color focus:ring-hover-color" placeholder="Nám" id="Nám">
+                    <option value="">Hef lokið grunnskólaprófi</option>
+                    <option value="">Hef lokið stúdentsprófi</option>
+                    <option value="">Hef lokið iðnmenntun</option>
+                    <option value="">Hef lokið BS gráðu</option>
+                    <option value="">Hef lokið Mastersgráðu</option>
+                    <option value="">Hef lokið Doktorsgráðu</option>
+                </select>
+                <div>
+                    <a href="form.html"><button class="text-black border-1 hover:bg-back font-normal bg-hover-color text-black text-md mt-7 py-2 w-full hover:ease-in-out duration-500 ">Ljúka skráningu</button></a>
+                </div>
+            </div>
 
 
-    <div class="grid grid-cols-1 gap-5 mx-10 mt-52 pb-20">
-      <div class="bg-header-color rounded-xl shadow-2xl w-full h-full p-8 mt-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5 text-lg shadow-logo-color">
-        <a class="h-24 w-auto md:w-auto lg:w-auto lg:h-auto bg bg-cover bg-center rounded-xl text-center text-header-color transform transition duration-500 hover:scale-105 shadow-xl shadow-hover-color bg-hover-color" style="background-image: url(public/program.jpg)" href="NTV-Programmingpage.html">FORRITUN</a>
-        <a class="h-24 w-auto md:w-auto lg:w-auto lg:h-auto bg bg-cover bg-center rounded-xl text-center text-header-color transform transition duration-500 hover:scale-105 shadow-xl shadow-hover-color bg-hover-color" style="background-image: url(public/datapro.jpg)" href="NTV-Programmingpage.html"> KERFISSTJÓRNUN & NETSTJÓRNUN</a>
-        <a class="h-24 w-auto md:w-auto lg:w-auto lg:h-auto bg bg-cover bg-center rounded-xl text-center text-header-color transform transition duration-500 hover:scale-105 shadow-xl shadow-hover-color bg-hover-color" style="background-image: url(public/datasci.jpg)" href="NTV-Programmingpage.html"> GAGNAMEISTARINN</a>
-        <a class="h-24 w-auto md:w-auto lg:w-auto lg:h-auto bg bg-cover bg-center rounded-xl text-center text-header-color transform transition duration-500 hover:scale-105 shadow-xl shadow-hover-color bg-hover-color" style="background-image: url(public/mobileapp.jpg)" href="NTV-Programmingpage.html"> LEIKJANÁM</a>
-        <a class="h-24 w-auto md:w-auto lg:w-auto lg:h-auto bg bg-cover bg-center rounded-xl text-center text-header-color transform transition duration-500 hover:scale-105 shadow-xl shadow-hover-color bg-hover-color" style="background-image: url(public/onlineshop.jpg)" href="NTV-Programmingpage.html">MARKAÐS, SÖLU OG REKSTRARNÁM</a>
-        <a class="h-24 w-auto md:w-auto lg:w-auto lg:h-auto bg bg-cover bg-center rounded-xl text-center text-header-color transform transition duration-500 hover:scale-105 shadow-xl shadow-hover-color bg-hover-color" style="background-image: url(public/datasci2.webp)" href="NTV-Programmingpage.html">ALMENN TÖLVUNAMSKEIÐ</a>
-        <table class="">
-          
-        </table>
+        
+        </form>
+
       </div>
-      <div class="bg-header-color rounded-2xl shadow-xl w-full h-full p-8 mt-10 col-start-1 md:col-start-2 shadow-logo-color">
-        <div class="sm:max-w-sm items-center justify-center">
-          <h1 class="flex justify-center text-4xl mb-4">FRÉTTIR</h1>
-          <h1 class="text-2xl text-center" >4 qualities you need to succeed in a cybersecurity career.</h1>
-          <p>Cybersecurity requires people who see the ‘big picture’. <br> To get ahead in the sector, you should work on the soft skills to complement your tech skills.</p>
+      <div class="bg-header-color border border-hover-color rounded-2xl shadow-xl w-full h-full p-8 mt-10 col-start-1 lg:col-start-2 shadow-logo-color">
+        <div class="sm:max-w-lg items-center justify-center">
+          <h1 class="flex justify-center text-4xl text-text-color">FRÉTTIR</h1>
+          <h1 class="text-2xl text-center text-text-color" >4 qualities you need to succeed in a cybersecurity career.</h1>
+          <p class="text-text-color">Cybersecurity requires people who see the ‘big picture’. <br> To get ahead in the sector, you should work on the soft skills to complement your tech skills.</p>
           <div class="h-24 bg-cover bg-center" style="background-image: url(public/cyber.jpg)"></div>
-          <div class=" border-b-2 mt-20 mb-14"></div>
-          <h1 class="text-2xl text-center" >The security flaw that Python developers should be aware of</h1>
-          <p>Security firm Checkmarx found that one in three software packages from PyPI contains a flaw <br> that can lead to malicious code being automatically installed.</p>
+          <div class=" border-b-2 mt-5 mb-14"></div>
+          <h1 class="text-2xl text-center text-text-color" >The security flaw that Python developers should be aware of</h1>
+          <p class="text-text-color">Security firm Checkmarx found that one in three software packages from PyPI contains a flaw <br> that can lead to malicious code being automatically installed.</p>
           <div class="h-24 bg-cover bg-center" style="background-image: url(public/python.jpeg)"></div>
         </div>
       </div>
@@ -223,8 +281,8 @@
     <div class="text-center p-6 bg-gray-200">
       <span>©Allur réttur áksilinn - Nýji tölvu- og viðskiptaskólinn</span>
     </div>
-  </footer>
-</div>
+  </footer>        
+    </div>
 
 
 
@@ -237,7 +295,7 @@
 
 
 
-<script src="./TW-ELEMENTS-PATH/dist/js/index.min.js"></script>
+
     <script>
       function Menu(e){
       let list = document.querySelector('ul');

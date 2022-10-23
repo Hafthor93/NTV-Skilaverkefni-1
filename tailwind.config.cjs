@@ -6,6 +6,10 @@ module.exports = {
     "./node_modules/tw-elements/dist/js/**/*.js"
   ],
   theme: {
+    fontFamily: {
+       'Roboto': ["Roboto", "sans-serif"],
+
+    },
 
     /* Color palette from https://colorhunt.co
        and some from https://colorpalettes.earth/
